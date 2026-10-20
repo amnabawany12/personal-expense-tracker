@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #25283d;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #5546a8;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.summary {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.summary-card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0000000d;
+}
+
+.summary-card h3 {
+    font-size: 16px;
+    color: #777;
+}
+
+.summary-card p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #5546a8;
+}
+
+.form-section,
+.table-section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0000000d;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+button {
+    background: #6654c5;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin-top: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4e3ca8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #f0edff;
+}
+
+.delete-btn {
+    background: #dc4c64;
+    margin: 0;
+}
+
+#empty-message {
+    text-align: center;
+    color: #888;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+    .summary {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 12px;
+        margin: 15px auto;
+    }
+
+    .form-section,
+    .table-section {
+        padding: 15px;
+    }
+}
